@@ -1,35 +1,49 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Formulir Pendaftaran</title>
-      <link rel="stylesheet" href="registrasi.css">
-   </head>
-   <body>
-      <div class="wrapper">
-         <div class="title">
-            Pendaftaran
-         </div>
-         <form action="#">
-            <div class="field">
-               <input type="text" required>
-               <label>Nama</label>
-            </div>
-            <div class="field">
-               <input type="text" required>
-               <label>Nomor</label>
-            </div>
-            <div class="field">
-               <input type="email" required>
-               <label>Email</label>
-            </div>
-            
-            <div class="field">
-               <input type="submit" value="Next">
-            </div>
-            
-         </form>
-      </div>
-   </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="registrasi.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">Pendaftaran</div>
+      <form id="myForm" action="registrasi.php" method="post">
+        <div class="field">
+          <input type="text" name="nama" required />
+          <label>Nama</label>
+        </div>
+        <div class="field">
+          <input type="text" name="nomor" required />
+          <label>Nomor</label>
+        </div>
+        <div class="field">
+          <input type="email" name="email" required />
+          <label>Email</label>
+        </div>
+        <div class="radio">
+          <label class="radio-label">
+            <input type="radio" name="paket" value="1" /> Paket 1
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="paket" value="2" /> Paket 2
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="paket" value="3" /> Paket 3
+          </label>
+        </div>
+        <select name="tujuan" required>
+          <option value="" disabled selected>Pilih Tujuan</option>
+          <option value="Gunung A">Gunung A</option>
+          <option value="Gunung B">Gunung B</option>
+          <option value="Gunung C">Gunung C</option>
+        </select>
+
+        <div class="field">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="registrasi.js"></script>
+  </body>
 </html>

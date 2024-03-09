@@ -105,7 +105,7 @@ form .field input[type="submit"]{
   color: #fff;
   border: none;
   padding-left: 0;
-  margin-top: -10px;
+  margin-top: 20px;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
@@ -129,3 +129,38 @@ form .pass-link a:hover,
 form .signup-link a:hover{
   text-decoration: underline;
 }
+/* CSS untuk radio button */
+.radio {
+  margin-top: 20px;
+}
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* CSS untuk label radio button */
+label.radio-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/* CSS untuk select dropdown */
+select {
+  width: 100%; /* 22px adalah padding dan border input */
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  outline: none;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+/* CSS untuk pilihan default pada select */
+select option[disabled] {
+  display: none;
+}
+
